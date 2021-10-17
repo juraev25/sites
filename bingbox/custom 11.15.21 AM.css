@@ -1,0 +1,1227 @@
+/*
+	font-type ::
+	font-family: 'Playfair Display', serif;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Mono', monospace;
+	font-family: 'Amatic SC', cursive;
+*/
+.header-image {
+	background-position: center bottom;
+	background-size: cover;
+}
+/********** BIGIN :: Pages header image **********/
+/* Index header */
+.header-image.index {
+	width: 100%;
+	height: 0;
+	padding-top: 50%;
+	position: relative;
+}
+.header-image.index:after {
+	content: "";
+	background-image: url('../img/index/header.jpg');
+	background-position: center right;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* process header */
+.header-image.process {
+	background-image: url('../img/process/header.jpg');
+	color: #fff;
+	min-height: 600px;
+}
+/* products header */
+.header-image.products {
+	background-image: url('../img/products/header.jpg');
+	color: #fff;
+	min-height: 600px;
+}
+/* contact header */
+.header-image.contact {
+	background-image: url('../img/contact/header.jpg');
+	background-attachment: fixed;
+	min-height: 600px;
+	color: #fff;
+}
+/* beands > bekcafe header */
+.header-image.bek-cafe {
+	background-image: url('../img/bekcafe/header.jpg');
+	background-attachment: fixed;
+	min-height: 750px;
+	color: #fff;
+}
+/* beands > bejcafe header */
+.header-image.bej-cafe {
+	background-image: url('../img/bejcafe/header.jpg');
+	background-position: center center;
+	color: #fff;
+}
+/* beands > bingbox header */
+.header-image.bingbox {
+	background-image: url('../img/bingbox/header.jpg');
+	background-position: center center;
+	color: #fff;
+}
+/* beands > sulmida header */
+.header-image.sulmida {
+	background-image: url('../img/sulmida/header.jpg');
+	background-position: center center;
+	color: #fff;
+}
+/* beands > meokbang header */
+.header-image.meokbang {
+	background-image: url('../img/meokbang/mogpang.jpg');
+	background-position: center center;
+	background-attachment: fixed;
+	color: #fff;
+}
+/* beands > becoffee header */
+.header-image.becoffee {
+	background-image: url('../img/becoffee/header.jpg');
+	background-position: center center;
+	color: #fff;
+}
+/********** END :: Pages header image **********/
+/********** BIGIN :: Pages header mask **********/
+.header-image .header-wrap {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.header-image.process .header-wrap {
+	min-height: 600px;
+	background-color: rgba(114,114,114,.89);
+}
+.header-image.products .header-wrap {
+	min-height: 600px;
+	background-color: rgba(7,7,7,.65);
+}
+.header-image.contact .header-wrap {
+	min-height: 600px;
+	background-color: rgba(2,18,45,.5);
+}
+.header-image.bek-cafe .header-wrap {
+	min-height: 750px;
+	background-color: rgba(0,47,73,.8);
+}
+.header-image.bej-cafe .header-wrap {
+	background-color: rgba(122,95,36,.65);
+}
+
+.header-image.bingbox .header-wrap {
+	min-height: 80vh;
+}
+.header-image.sulmida .header-wrap {
+	background-color: rgba(119,71,0,0.89);
+}
+.header-image.meokbang .header-wrap {
+	background-color: rgba(0,0,0,0.65);
+}
+.header-image.becoffee .header-wrap {
+	background-color: rgba(0,0,0,0);
+}
+.header-image.becoffee .header-wrap .container {
+	min-height: 50vh;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+@media(min-width: 992px) {
+	.header-image.bej-cafe .header-wrap {
+		padding: 100px;
+	}
+	.header-image.sulmida .header-wrap {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+	.header-image.meokbang .header-wrap {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+	.header-image.becoffee .header-wrap {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+}
+@media(max-width: 991px) {
+	.header-image.bej-cafe .header-wrap {
+		padding: 30px 15px;
+	}
+	.header-image.sulmida .header-wrap {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.header-image.meokbang .header-wrap {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.header-image.becoffee .header-wrap {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+.header-image.sobing .header-wrap {
+	background-color: rgba(5,188,133,0.61);
+}
+/********** END :: Pages header mask **********/
+.header-image.process .header-wrap > * {
+	text-align: center;
+}
+.header-image.process .header-wrap .title {
+	padding-bottom: 50px;
+	position: relative;
+	font-size: 55px;
+}
+.header-image.process .header-wrap .title:after {
+	content: "";
+	width: 10%;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #cc2e72;
+}
+.header-image.process .header-wrap .content {
+	font-size: 21px;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.header-image .header-wrap .header-title {
+	font-family: "Playfair Display", Sans-serif;
+}
+
+.header-image.products .header-wrap .header-title {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 1.3px;
+    padding: 0 4%;
+}
+
+.header-image.contact .header-wrap .header-title {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 1.3px;
+    padding: 0 4%;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.header-image.contact .header-wrap .header-title:after {
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 0;
+	border-bottom: 5px dotted #ffffff;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.header-image.contact .header-wrap .header-content {
+	font-size: 25px;
+	font-weight: 300;
+	padding: 0 20%;
+}
+.header-image.bek-cafe .header-wrap .header-title {
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: -1.4px;
+}
+.header-image.bek-cafe .header-wrap .header-content {
+    line-height: 2;
+}
+.header-image.bej-cafe .header-wrap .header-title {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 1.1em;
+    letter-spacing: -1.4px;
+}
+.header-image.meokbang .header-wrap .header-title {
+    font-size: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: -1.4px;
+    min-height: 30vh;
+}
+.header-image.becoffee .header-wrap .header-title {
+    font-size: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: -1.4px;
+}
+.header-image.becoffee .header-wrap .header-content {
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 1;
+}
+.min-h500 {
+	min-height: 500px;
+}
+.join-bkkorea-family {
+	color: #ffffff;
+	position: relative;
+	opacity: 1;
+	line-height: 2rem;
+	background-position: center center;
+	background-size: cover;
+	background-image: url('../img/index/divider-1.jpg');
+}
+.join-bkkorea-family .box {
+	background-color: rgba(00,0,0,.6);
+}
+.gallery > .row {
+	background-color: #000;
+}
+.gallery a {
+	overflow: hidden;
+	display: block;
+	opacity: .7;
+	transition: all .5s ease;
+}
+.gallery a:hover {
+	opacity: 1;
+	transition: all .5s ease;
+}
+.gallery a img {
+	transform: scale(1,1);
+	transition: all .5s ease;
+}
+.gallery a:hover img {
+	transform: scale(1.2,1.2);
+	transition: all .5s ease;
+}
+/* END :: Index page */
+/* BIGIN :: Process page */
+.our-brand-kinds {
+	/**/
+}
+.our-brand-kinds a {
+	display: block;
+	text-decoration: none;
+}
+.our-brand-kinds span {
+	display: block;
+}
+.our-brand-kinds .subject {
+	padding: 30px 0 0 0;
+	color: #54595f;
+    font-family: "Poppins", Sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+}
+@media(max-width: 992px) {
+	.our-brand-kinds .subject {
+		min-height: 6.5rem;
+	}
+}
+.our-brand-kinds .content {
+	color: #7a7a7a;
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+}
+.or-start-your-own-brand {
+	/**/
+}
+.or-start-your-own-brand .title.main-title {
+	font-size: 40px;
+	font-weight: bold;
+}
+.or-start-your-own-brand .title.sub-title {
+	font-size: 27px;
+	font-family: "Poppins", Sans-serif;
+	font-weight: bold;
+}
+.brand-identity-design .brand-title {
+	font-size: 40px;
+	font-weight: 700;
+}
+.brand-identity-design .business-model .wrap {
+	padding-left: 120px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.brand-identity-design .business-model .row > div:nth-child(1) .wrap {
+	background-image: url('../img/process/1470399662_Marketing.png');
+}
+.brand-identity-design .business-model .row > div:nth-child(2) .wrap {
+	background-image: url('../img/process/1470399607_Illustration.png');
+}
+.brand-identity-design .business-model .row > div:nth-child(3) .wrap {
+	background-image: url('../img/process/1470399671_SEO.png');
+}
+.brand-identity-design .business-model .row > div:nth-child(4) .wrap {
+	background-image: url('../img/process/1470399594_Web_Design.png');
+}
+.brand-identity-design .business-model .row > div:nth-child(5) .wrap {
+	background-image: url('../img/process/1470399614_Social_Media.png');
+}
+.brand-identity-design .business-model .row > div:nth-child(6) .wrap {
+	background-image: url('../img/process/1470399715_E-Commerce.png');
+}
+.brand-identity-design .business-model .row > div:nth-child(7) .wrap {
+	background-image: url('../img/process/1470399656_Branding.png');
+}
+.brand-identity-design .business-model .title {
+	color: #CC2E7C;
+	font-size: 27px;
+	font-weight: 500;
+}
+.our-projects > .container > .title {
+	font-size: 40px;
+	font-weight: 700;
+}
+.our-projects .our-project-wrap {
+	padding: 10px;
+	border-radius: 10px;
+    box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.5);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.our-projects .our-project-wrap .our-project-content {
+	margin-left: auto;
+	margin-right: auto;
+}
+@media(min-width: 992px) {
+	.our-projects .our-project-wrap .our-project-content {
+		width: 70%;
+	}
+}
+@media(max-width: 991px) {
+	.our-projects .our-project-wrap .our-project-content {
+		width: 100%;
+	}
+}
+.our-projects .our-project-wrap .our-project-content .project-name {
+    font-family: "Poppins", Sans-serif;
+    font-weight: bold;
+	color: #ffff00;
+	font-size: 27px;
+	text-decoration: underline;
+	padding: 5%;
+	background-color: #000000;
+	margin-bottom: 20px;
+}
+.our-projects .our-project-wrap .our-project-content .project-title {
+	padding: 10%;
+    color: #000000;
+	font-family: "Poppins", Sans-serif;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 1;
+}
+.our-projects .our-project-wrap .our-project-content .project-content {
+	padding: 10%;
+	margin: 0;
+}
+/* END :: Process page */
+/* BIGIN :: Projects page */
+.bk-korea-powders .title, .sauces-and-ingredients .title, .kitchen-equipment .title {
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+.sauces-and-ingredients .items .product-name {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.sauces-and-ingredients .items .product-content {
+	padding-top: 0;
+	padding-bottom: 3rem;
+}
+@media (min-width: 992px) {
+	.kitchen-equipment .content {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.kitchen-equipment .kitchen-wrap {
+		padding: 20px 10%;
+	}
+}
+.kitchen-equipment .item {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.kitchen-equipment .subject {
+    font-family: "Poppins", Sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+    line-height: 1;
+}
+.kitchen-equipment .ex {
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+.products-tail {
+	background-image: url('../img/products/footer_header-960x640.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+.products-tail .tail-wrap {
+	display: flex;
+	min-height: 30vh;
+	background-color: rgba(2,2,2,.76);
+	align-items: center;
+	color: #fff;
+}
+.products-tail .tail-wrap .tail-str {
+	font-family: "Playfair Display", Sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+/* END :: Projects page */
+/* BIGIN :: Contact us page */
+.customer {
+	padding: 60px 0;
+}
+.customer .cs {
+	border-right: 1px solid #dedede;
+	padding: 70px 0;
+}
+.customer .cs:last-child {
+	border-right: 0;
+}
+.customer .cs .icon {
+	font-size: 72px;
+}
+.customer .cs .us {
+	font-size: 21px;
+}
+.customer .cs .con {
+	font-size: 17px;
+	font-weight: bold;
+}
+.contact-us {
+	min-height: 620px;
+}
+.contact-us #map {
+	min-height: 620px;
+}
+.contact-us #gmap iframe {
+	width: 100%;
+	height: 100%;
+}
+.contact-us *[required] {
+	/*border: 1px solid red;*/
+}
+.contact-us label.required {
+	position: relative;
+	padding-right: 15px;
+}
+.contact-us label.required:after {
+	content: "*";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	color: red;
+}
+/* END :: Contact us page */
+/********** BIGIN :: Brands > bkcafe page **********/
+.bek-cafe-our-menu .title {
+	color: #474545;
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 41px;
+    font-weight: bold;
+    line-height: 0.5em;
+    letter-spacing: -0.8px;
+}
+.bek-cafe-our-menu .content {
+    color: #726f6f;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    line-height: 2.2em;;
+}
+.menu-item .menu-title {
+	color: #54595f;
+	font-family: "Playfair Display", Sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+}
+.menu-item .menu-title:after {
+	content: "";
+	position: absolute;
+	width: 25%;
+	height: 2px;
+	background-color: #54595f;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.menu-item .menu-image {
+	padding-top: 10px;
+}
+@media(max-width: 991px) {
+	.menu-item {
+		text-align: center;
+	}
+}
+.bek-cafe-our-work .row {
+	background-color: #f5f5f5;
+
+}
+.bek-cafe-our-menu-cate .menu-cate-title {
+	font-family: "Playfair Display", Sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+.mrnu-cate-subject {
+    /*font-family: "Amatic SC", Sans-serif;*/
+    font-family: 'Amatic SC', cursive;
+    font-size: 37px;
+    font-weight: bold;
+}
+.mrnu-cate-name {
+	font-family:monospace;
+    font-size: 27px;
+    font-weight: bold;
+}
+.mrnu-cate-content {
+	font-size: 14px;
+    font-weight: 300;
+    line-height: 1.618;
+}
+.tail-image {
+	background-position: center center;
+	background-size: cover;
+}
+@media(max-width: 991px) {
+	.tail-image .tail-wrap {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.partners .col-6 {
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+}
+.tail-image .tail-wrap {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tail-image .tail-wrap #gmap {
+	min-height: 300px;
+}
+.tail-image.bek-cafe {
+	min-height: 970px;
+	background-image: url('../img/bekcafe/bek3-1.jpg');
+}
+.tail-image.bek-cafe .tail-wrap {
+	min-height: 970px;
+	flex-direction: column;
+	background-color: rgba(0,47,76,.8);
+	color: #fff;
+}
+.tail-image.bek-cafe .tail-wrap .title {
+    font-family: "Playfair Display", Sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+.tail-image.bek-cafe .tail-wrap .content {
+	font-size: 16px;
+}
+.tail-image.bek-cafe .tail-wrap .bekcafe-info {
+	background-color: rgba(255,255,255,.25);
+	padding: 40px 40px 40px 100px;
+	position: relative;
+}
+.tail-image.bek-cafe .tail-wrap .bekcafe-info .icon {
+	position: absolute;
+	color: #504993;
+	top: 20px;
+	left: 40px;
+	font-size: 60px;
+}
+.tail-image.bek-cafe .tail-wrap .bekcafe-info .content {
+	font-size: 15px;
+}
+.tail-image.bek-cafe .tail-wrap .bekcafe-info.working {}
+.tail-image.bek-cafe .tail-wrap .bekcafe-info.we-here {
+	margin-top: 30px;
+}
+
+.tail-image.bek-cafe .tail-wrap #gmap,
+.tail-image.bek-cafe .tail-wrap #gmap iframe {
+	width: 100%;
+	height: 100%;
+}
+/********** END :: Brands > bkcafe page **********/
+/********** BIGIN :: Brands > bej cafe page **********/
+.bej-cafe-work .title {
+	font-size: 35px;
+	font-weight: 700;
+	color: #3C4858;
+}
+@media(max-width: 991px) {
+	.bej-cafe-work .title {
+		margin-top: 30px;
+	}
+}
+.bej-cafe-bingsu-type .title {
+	font-size: 37px;
+	font-weight: 300;
+}
+@media(min-width: 992px) {
+	.bej-cafe-bingsu-type .title.bingsu-name {
+		margin-top: 30px;
+	}
+}
+@media(max-width: 991px) {
+	.bej-cafe-bingsu-type .title.bingsu-name {
+		margin-top: 30px;
+	}
+}
+.bej-cafe-bingsu-type .title.bingsu-name {
+	font-size: 32px;
+	position: relative;
+	padding-bottom: 30px;
+}
+.bej-cafe-bingsu-type .title.bingsu-name:after {
+	content: "";
+	position: absolute;
+	width: 35%;
+	height: 5px;
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.bej-cafe-bingsu-type .content {
+	color: #000000;
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* BIGIN :: bej cafe page tail */
+.tail-image.bej-cafe {
+	min-height: 725px;
+	background-image: url('../img/bejcafe/bejc.jpg');
+	background-attachment: fixed;
+}
+.tail-image.bej-cafe .tail-wrap {
+	min-height: 725px;
+	flex-direction: column;
+	background-color: rgba(119,71,0,.89);
+	color: #fff;
+}
+.tail-image.bej-cafe .tail-wrap .title {
+    font-family: "Playfair Display", Sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+.tail-image.bej-cafe .tail-wrap .content {
+	font-size: 16px;
+}
+.tail-image.bej-cafe .tail-wrap .bekcafe-info {
+	background-color: rgba(255,255,255,.25);
+	padding: 40px 40px 40px 100px;
+	position: relative;
+}
+.tail-image.bej-cafe .tail-wrap .bekcafe-info .icon {
+	position: absolute;
+	color: #504993;
+	top: 20px;
+	left: 40px;
+	font-size: 60px;
+}
+.tail-image.bej-cafe .tail-wrap .bekcafe-info .content {
+	font-size: 15px;
+}
+.tail-image.bej-cafe .tail-wrap .bekcafe-info.working {}
+.tail-image.bej-cafe .tail-wrap .bekcafe-info.we-here {
+	margin-top: 30px;
+}
+
+.tail-image.bej-cafe .tail-wrap #gmap,
+.tail-image.bej-cafe .tail-wrap #gmap iframe {
+	width: 100%;
+	height: 100%;
+}
+/* END :: bej cafe page tail */
+/********** END :: Brands > bej cafe page **********/
+/********** BIGIN :: Brands > sobing page **********/
+.header-image.sobing .header-wrap .side-image {
+	padding: 50px;
+	animation-duration: 1500ms;
+	
+}
+.header-image.sobing .header-wrap .side-image.left {
+	animation-name: rotate_l;
+}
+.header-image.sobing .header-wrap .side-image.right {
+	animation-name: rotate_r;
+}
+@keyframes rotate_l {
+	0% {
+		opacity: 0;
+		transform: translate(120px,-120px) rotate(60deg);
+		transition: all;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0px,0px) rotate(0deg);
+		transition: all;
+	}
+}
+@keyframes rotate_r {
+	from {
+		opacity: 0;
+		transform: translate(-120px,-120px) rotate(-60deg);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(0px,0px) rotate(0deg);
+	}
+}
+.header-image.sobing .header-wrap .sobing-logo {
+	padding: 60px;
+}
+.about-sobing {
+	color: rgba(5,188,133,0.61);
+}
+.sobing-title {
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 37px;
+}
+.sobing-sub-title {
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 32px;
+}
+.sobing-video {
+	background-color: rgba(5,188,133,0.61);
+	color: #ffffff;
+}
+/* BIGIN :: sobing page tail */
+.tail-image.sobing {
+	min-height: 725px;
+	background-image: url('../img/sobing/40054242_310718759484961_4230275111313211392_o.jpg');
+	background-attachment: fixed;
+}
+.tail-image.sobing .tail-wrap {
+	min-height: 725px;
+	flex-direction: column;
+	background-color: rgba(93,193,192,0.61);
+	color: #fff;
+}
+.tail-image.sobing .tail-wrap .title {
+    font-family: "Playfair Display", Sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+.tail-image.sobing .tail-wrap .content {
+	font-size: 16px;
+}
+.tail-image.sobing .tail-wrap .bekcafe-info {
+	background-color: rgba(255,255,255,.25);
+	padding: 40px 40px 40px 100px;
+	position: relative;
+}
+.tail-image.sobing .tail-wrap .bekcafe-info .icon {
+	position: absolute;
+	color: #504993;
+	top: 20px;
+	left: 40px;
+	font-size: 60px;
+}
+.tail-image.sobing .tail-wrap .bekcafe-info .content {
+	font-size: 15px;
+}
+.tail-image.sobing .tail-wrap .bekcafe-info.working {}
+.tail-image.sobing .tail-wrap .bekcafe-info.we-here {
+	margin-top: 30px;
+}
+
+.tail-image.sobing .tail-wrap #gmap,
+.tail-image.sobing .tail-wrap #gmap iframe {
+	width: 100%;
+	height: 100%;
+}
+/* END :: sobing page tail */
+/********** END :: Brands > sobing page **********/
+/********** BIGIN :: Brands > bingbox page **********/
+.bingbox-movie-wrap .title {
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: -1.4px;
+    font-size: 37px;
+}
+.bingbox-movie {
+	background-position: center bottom;
+	background-size: cover;
+	background-image: url('../img/bingbox/header.jpg');
+	background-attachment: fixed;
+	color: #ffffff;
+}
+.bingbox-movie .bingbox-movie-wrap {
+	padding: 100px 0;
+	background-color: rgba(0,127,145,.8);
+}
+.bingbox-gallery a {
+	display: block;
+	overflow: hidden;
+}
+.bingbox-gallery a img {
+	transform: scale(1,1);
+	transition: all .5s ease;
+}
+.bingbox-gallery a:hover img {
+	transform: scale(1.2,1.2);
+	transition: all .5s ease;
+}
+/* BIGIN :: bingbox page tail */
+.tail-image.bingbox {
+	min-height: 725px;
+	background-image: url('../img/bingbox/bingbox-tail.jpg');
+}
+.tail-image.bingbox .tail-wrap {
+	min-height: 725px;
+	flex-direction: column;
+	background-color: rgba(0,127,130,0.8);
+	color: #fff;
+}
+.tail-image.bingbox .tail-wrap .title {
+    font-family: "Playfair Display", Sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+.tail-image.bingbox .tail-wrap .content {
+	font-size: 16px;
+}
+.tail-image.bingbox .tail-wrap .bekcafe-info {
+	background-color: rgba(255,255,255,.25);
+	padding: 40px 40px 40px 100px;
+	position: relative;
+}
+.tail-image.bingbox .tail-wrap .bekcafe-info .icon {
+	position: absolute;
+	color: #504993;
+	top: 20px;
+	left: 40px;
+	font-size: 60px;
+}
+.tail-image.bingbox .tail-wrap .bekcafe-info .content {
+	font-size: 15px;
+}
+.tail-image.bingbox .tail-wrap .bekcafe-info.working {}
+.tail-image.bingbox .tail-wrap .bekcafe-info.we-here {
+	margin-top: 30px;
+}
+
+.tail-image.bingbox .tail-wrap #gmap,
+.tail-image.bingbox .tail-wrap #gmap iframe {
+	width: 100%;
+	height: 100%;
+}
+/* END :: bingbox page tail */
+/********** END :: Brands > bingbox page **********/
+/********** BIGIN :: Brands > sulmida page **********/
+.header-image.sulmida .header-wrap .header-title {
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: -1.4px;
+}
+.about-sulmida .row {
+	background-color: #f5f5f5;
+}
+/* BIGIN :: sulmida page tail */
+.tail-image.sulmida {
+	min-height: 725px;
+	background-image: url('../img/sulmida/interior-21-1.jpg');
+	background-position: center top;
+	background-attachment: fixed;
+}
+.tail-image.sulmida .tail-wrap {
+	min-height: 725px;
+	flex-direction: column;
+	background-color: rgba(119,71,0,0.89);
+	color: #fff;
+}
+.tail-image.sulmida .tail-wrap .title {
+    font-family: "Playfair Display", Sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+.tail-image.sulmida .tail-wrap .content {
+	font-size: 16px;
+}
+.tail-image.sulmida .tail-wrap .bekcafe-info {
+	background-color: rgba(255,255,255,.25);
+	padding: 40px 40px 40px 100px;
+	position: relative;
+}
+.tail-image.sulmida .tail-wrap .bekcafe-info .icon {
+	position: absolute;
+	color: #504993;
+	top: 20px;
+	left: 40px;
+	font-size: 60px;
+}
+.tail-image.sulmida .tail-wrap .bekcafe-info .content {
+	font-size: 15px;
+}
+.tail-image.sulmida .tail-wrap .bekcafe-info.working {}
+.tail-image.sulmida .tail-wrap .bekcafe-info.we-here {
+	margin-top: 30px;
+}
+
+.tail-image.sulmida .tail-wrap #gmap,
+.tail-image.sulmida .tail-wrap #gmap iframe {
+	width: 100%;
+	height: 100%;
+}
+/* END :: sulmida page tail */
+/********** END :: Brands > sulmida page **********/
+/********** BIGIN :: Brands > meokbang page **********/
+.meokbang-work .row {
+	background-color: #f5f5f5;
+}
+.meokbang-menu {
+    font-family: "Poppins", Sans-serif;
+}
+.meokbang-menu .menu-title {
+	font-weight: bold;
+	font-size: 27px;
+}
+.meokbang-menu .menu-content {
+    font-weight: 300;
+    line-height: 1.618;
+    font-size: 16px;
+}
+/* BIGIN :: meokbang page tail */
+.tail-image.meokbang {
+	min-height: 725px;
+	background-image: url('../img/meokbang/image-5.jpg');
+	background-attachment: fixed;
+}
+.tail-image.meokbang .tail-wrap {
+	min-height: 725px;
+	flex-direction: column;
+	background-color: rgba(0,0,0,0.76);
+	color: #fff;
+}
+.tail-image.meokbang .tail-wrap .title {
+    font-family: "Playfair Display", Sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+.tail-image.meokbang .tail-wrap .content {
+	font-size: 16px;
+}
+.tail-image.meokbang .tail-wrap .bekcafe-info {
+	background-color: rgba(255,255,255,.25);
+	padding: 40px 40px 40px 100px;
+	position: relative;
+}
+.tail-image.meokbang .tail-wrap .bekcafe-info .icon {
+	position: absolute;
+	color: #504993;
+	top: 20px;
+	left: 40px;
+	font-size: 60px;
+}
+.tail-image.meokbang .tail-wrap .bekcafe-info .content {
+	font-size: 15px;
+}
+.tail-image.meokbang .tail-wrap .bekcafe-info.working {}
+.tail-image.meokbang .tail-wrap .bekcafe-info.we-here {
+	margin-top: 30px;
+}
+
+.tail-image.meokbang .tail-wrap #gmap,
+.tail-image.meokbang .tail-wrap #gmap iframe {
+	width: 100%;
+	height: 100%;
+}
+/* END :: meokbang page tail */
+/********** END :: Brands > meokbang page **********/
+/********** BIGIN :: Brands > becoffee page **********/
+@media(min-width: 992px) {
+	.becoffee-wrapper {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+}
+@media(max-width: 991px) {
+	.becoffee-wrapper {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+}
+.becoffee-subtitle {
+	font-family: "Playfair Display", Sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+}
+.coffee-bean {
+	background-image: url(../img/becoffee/banner-3.jpg);
+	background-size: cover;
+	color: #ffffff;
+}
+.cups {
+	background-image: url(../img/becoffee/cups.jpg);
+	background-size: cover;
+	min-height: 1000px;
+}
+.special-coffee {
+	font-family: "Playfair Display", Sans-serif;
+	background-image: url(../img/becoffee/banner-4.jpg);
+	background-size: cover;
+	color: #ffffff;
+}
+.special-coffee .special-coffee-wrap {
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    padding: 20%;
+}
+.special-coffee .special-coffee-wrap .content {
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 1;
+}
+.becoffee-menu.drinks .item-image {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
+.becoffee-menu.drinks .content {
+	font-size: 24px;
+	font-weight: bold;
+}
+.becoffee-menu.fresh-food {
+	color: #ffffff;
+	background-image: url('../img/becoffee/banner-2.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+/* BIGIN :: becoffee page tail */
+.tail-image.becoffee {
+	min-height: 725px;
+	background-image: url('../img/becoffee/banner-1.jpg');
+	background-attachment: fixed;
+}
+.tail-image.becoffee .tail-wrap {
+	min-height: 725px;
+	flex-direction: column;
+	background-color: rgba(0,0,0,0);
+	color: #fff;
+}
+.tail-image.becoffee .tail-wrap > .container > .title {
+    font-size: 37px;
+	font-weight: bold;
+}
+.tail-image.becoffee .tail-wrap > .container > .sub-title {
+    font-size: 32px;
+	font-weight: 300;
+}
+.tail-image.becoffee .tail-wrap .becoffee-worktime {
+	font-family: "Playfair Display", Sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 1;
+}
+.tail-image.becoffee .tail-wrap .content {
+	font-size: 16px;
+}
+.tail-image.becoffee .tail-wrap .bekcafe-info {
+	background-color: rgba(255,255,255,.25);
+	padding: 40px 40px 40px 100px;
+	position: relative;
+}
+.tail-image.becoffee .tail-wrap .bekcafe-info .icon {
+	position: absolute;
+	color: #504993;
+	top: 20px;
+	left: 40px;
+	font-size: 60px;
+}
+.tail-image.becoffee .tail-wrap .bekcafe-info .content {
+	font-size: 15px;
+}
+.tail-image.becoffee .tail-wrap .bekcafe-info.working {}
+.tail-image.becoffee .tail-wrap .bekcafe-info.we-here {
+	margin-top: 30px;
+}
+
+.tail-image.becoffee .tail-wrap #gmap,
+.tail-image.becoffee .tail-wrap #gmap iframe {
+	width: 100%;
+	height: 100%;
+    font-family: 
+
+}
+/* END :: becoffee page tail */
+/********** END :: Brands > becoffee page **********/
+/* BIGIN :: Brands > * : partners */
+.partners {
+	background-color: ;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: rgba(0,0,0,0.06);
+}
+/* END :: Brands > * : partners */
+/* BIGIN :: Vimeo auto sizing; */
+.youtube iframe,
+.vimeo iframe {
+	position: absolute;
+	width: 100% !important;
+	height: 100% !important;
+	top: 0;
+	left: 0;
+}
+.youtube {
+	width: 100%;
+	position: relative;
+	height: 0;
+	padding-top: 56.25%;
+}
+.bek1 {
+  background-image: url('aaaa.png');
+    padding: 40px 40px 40px 100px;
+    
+}
+.vimeo #made-in-ny {
+	position: relative;
+	height: 0;
+	padding-top: 56.25%;
+}
+
+
+/* END :: Vimeo auto sizing; 
